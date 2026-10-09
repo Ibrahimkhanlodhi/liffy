@@ -1,0 +1,8 @@
+{
+  "name": "liffy",
+  "private": true,
+  "type": "module",
+  "scripts": { "embed": "node --env-file=.env.local scripts/embed.js" },
+  "dependencies": { "@upstash/ratelimit": "^2.0.0",
+    "@upstash/redis": "^1.34.0" }
+}

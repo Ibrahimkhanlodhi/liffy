@@ -1,0 +1,134 @@
+[
+ [
+  "What is the speed of light in a vacuum?",
+  "The speed of light in a vacuum is approximately 299,792,458 meters per second."
+ ],
+ [
+  "Who discovered penicillin?",
+  "Penicillin was discovered by Alexander Fleming in 1928."
+ ],
+ [
+  "What planet is known as the Red Planet?",
+  "Mars is known as the Red Planet."
+ ],
+ [
+  "What year did the first humans land on the Moon?",
+  "The first humans landed on the Moon in 1969."
+ ],
+ [
+  "What is the largest organ in the human body?",
+  "The largest organ in the human body is the skin."
+ ],
+ [
+  "What does CPU stand for?",
+  "CPU stands for Central Processing Unit."
+ ],
+ [
+  "What is RAM?",
+  "RAM stands for Random Access Memory, and it is a type of computer memory used to store data temporarily for quick access by the CPU."
+ ],
+ [
+  "What is the difference between HTTP and HTTPS?",
+  "HTTP stands for Hypertext Transfer Protocol and is used for transmitting data over the internet. HTTPS is the secure version, using encryption to protect the data sent between your browser and the website."
+ ],
+ [
+  "What is an operating system?",
+  "An operating system is software that manages computer hardware and provides services for computer programs. Examples include Windows, macOS, and Linux."
+ ],
+ [
+  "What is a blockchain?",
+  "A blockchain is a decentralized digital ledger that records transactions across many computers in such a way that the registered transactions cannot be altered retroactively."
+ ],
+ [
+  "How does a VPN work?",
+  "A VPN, or Virtual Private Network, creates a secure, encrypted connection over a less secure network like the internet, allowing users to send and receive data as if their device were directly connected to a private network."
+ ],
+ [
+  "What is an API?",
+  "An API, or Application Programming Interface, is a set of rules and protocols for building and interacting with software applications."
+ ],
+ [
+  "What is cloud computing?",
+  "Cloud computing is the delivery of computing services—such as servers, storage, databases, networking, software—over the internet (“the cloud”) to offer faster innovation, flexible resources, and scalable solutions."
+ ],
+ [
+  "What is a firewall?",
+  "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules."
+ ],
+ [
+  "What is open source software?",
+  "Open source software is computer software whose source code is released under a license that allows users to study, change, and distribute the software to anyone and for any purpose."
+ ],
+ [
+  "What is the chemical symbol for water?",
+  "The chemical formula for water is H2O: two hydrogen atoms bonded to one oxygen atom."
+ ],
+ [
+  "What is the boiling point of water?",
+  "Water boils at 100 °C (212 °F) at standard sea-level atmospheric pressure."
+ ],
+ [
+  "What is the largest planet in the solar system?",
+  "Jupiter is the largest planet in our solar system."
+ ],
+ [
+  "What is photosynthesis?",
+  "Photosynthesis is the process by which plants, algae and some bacteria use sunlight, water and carbon dioxide to produce glucose and oxygen."
+ ],
+ [
+  "Who developed the theory of general relativity?",
+  "Albert Einstein developed the theory of general relativity, published in 1915."
+ ],
+ [
+  "What is DNA?",
+  "DNA (deoxyribonucleic acid) is the molecule that carries the genetic instructions for the growth, development and functioning of living organisms."
+ ],
+ [
+  "What is gravity?",
+  "Gravity is the force by which a planet or other body draws objects toward its center. On Earth it gives objects weight and accelerates them at about 9.8 m/s²."
+ ],
+ [
+  "What is artificial intelligence?",
+  "Artificial intelligence (AI) is the field of computer science focused on building systems that perform tasks normally requiring human intelligence, such as learning, reasoning, perception and language understanding."
+ ],
+ [
+  "What is machine learning?",
+  "Machine learning is a branch of AI in which algorithms learn patterns from data to make predictions or decisions without being explicitly programmed for each task."
+ ],
+ [
+  "What is RAG retrieval augmented generation?",
+  "Retrieval-Augmented Generation (RAG) combines a search step that fetches relevant documents with a language model that uses them to write a grounded answer."
+ ],
+ [
+  "What is a database?",
+  "A database is an organized collection of data stored electronically so it can be easily accessed, managed and updated."
+ ],
+ [
+  "What is SQL?",
+  "SQL (Structured Query Language) is a language used to store, query and manage data in relational databases."
+ ],
+ [
+  "What is Python?",
+  "Python is a high-level, general-purpose programming language known for its readable syntax, widely used in web development, data science and AI."
+ ],
+ [
+  "What is Docker?",
+  "Docker is a platform that packages applications and their dependencies into lightweight containers so they run consistently across environments."
+ ],
+ [
+  "What is encryption?",
+  "Encryption is the process of converting information into an unreadable form using an algorithm and a key, so only authorized parties can read it."
+ ],
+ [
+  "What is phishing?",
+  "Phishing is a cyberattack in which criminals impersonate trusted entities, usually by email or message, to trick people into revealing passwords or personal data."
+ ],
+ [
+  "What is an IP address?",
+  "An IP address is a numerical label assigned to each device on a network, used to identify and locate it for communication."
+ ],
+ [
+  "What is Wi-Fi?",
+  "Wi-Fi is wireless networking technology that lets devices connect to a local network and the internet using radio waves."
+ ]
+]
