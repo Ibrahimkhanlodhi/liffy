@@ -2,13 +2,15 @@ import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
-import { embed, generate } from "../lib/gemini.js";
+import { embed } from "../lib/gemini.js";
+import { generate } from "../lib/llm.js";
 import { valid } from "../lib/session.js";
 
 const load = f => JSON.parse(readFileSync(new URL("../" + f, import.meta.url), "utf8"));
 const KB = load("kb.json");
 let VECS = null;
 try { VECS = load("embeddings.json"); } catch {}
+if (VECS && VECS.length !== KB.length) VECS = null; // stale embeddings: use keyword matching until `npm run embed` is rerun
 const url = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL;
 const token = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN;
 const redis = url && token ? new Redis({ url, token }) : null;
