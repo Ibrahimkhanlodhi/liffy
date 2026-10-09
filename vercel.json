@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/**/*.js": {
+      "includeFiles": "{kb.json,embeddings.json}"
+    }
+  }
+}
