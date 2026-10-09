@@ -20,3 +20,6 @@ Per visitor (hashed IP): 8/min and 60/day. Globally: 300 LLM fallback calls/day,
 2. Put the SITE key in `index.html` (`SITEKEY`). Set `TURNSTILE_SECRET` and `SESSION_SECRET` in Vercel environment variables, then redeploy.
 3. Visitors pass the check once (usually invisible) and get a 1-hour signed cookie. /api/chat rejects requests without it.
 Test keys for development: site `1x00000000000000000AA`, secret `1x0000000000000000000000000000000AA`.
+
+## Free general-knowledge models
+Embeddings still use Gemini. Answers to questions outside the knowledge base come from Groq first, then OpenRouter, then Gemini, skipping any provider without a key. Set GROQ_API_KEY (and optionally OPENROUTER_API_KEY) in Vercel and redeploy.

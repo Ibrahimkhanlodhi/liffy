@@ -31,12 +31,14 @@ const tooMany = (res, reset, msg) => {
   return res.status(429).json({ answer: msg });
 };
 
+const STOP = new Set("what is the a an of in on at to for and or it its this that these those which who whom why when where".split(" "));
 const words = t => (t.toLowerCase().match(/[a-z0-9]+/g) || []);
 function keywordMatch(msg) { // fallback if embeddings are unavailable
-  const q = words(msg).filter(w => w.length > 2); if (!q.length) return null;
+  const q = words(msg).filter(w => w.length > 1 && !STOP.has(w)); if (!q.length) return null;
   let best = null, bs = 0;
   for (const [i, [question]] of KB.entries()) {
     const set = new Set(words(question));
+    if (!q.every(w => set.has(w)) && q.length < 2) continue; // single-word queries must match fully
     const s = q.filter(w => set.has(w)).length / q.length;
     if (s > bs) { bs = s; best = i; }
   }
@@ -88,7 +90,7 @@ export default async function handler(req, res) {
     source = "general knowledge";
     try {
       if (limiters) { const g = await limiters.llm.limit("global"); if (!g.success) return tooMany(res, g.reset, "I can only answer from my knowledge base right now. Try a science or tech question."); } answer = await generate(history, message) || "I'm not sure about that."; }
-    catch { answer = "I couldn't find that in my knowledge base, and general knowledge is unavailable right now."; }
+    catch { source = "unavailable"; answer = "I couldn't find that in my knowledge base, and general knowledge is unavailable right now."; }
   }
   try { // aggregate counters only: no IP, no question text
     if (redis) await Promise.all([

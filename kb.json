@@ -130,5 +130,353 @@
  [
   "What is Wi-Fi?",
   "Wi-Fi is wireless networking technology that lets devices connect to a local network and the internet using radio waves."
+ ],
+ [
+  "Who are you?",
+  "I'm Liffy, a friendly chatbot. I answer from a built-in knowledge base of science, technology and general facts, and use general knowledge when I don't have a specific answer."
+ ],
+ [
+  "What can you do?",
+  "I can answer questions about science, space, the human body, geography, history, math, computing, the internet, cybersecurity and AI. Just ask, and if it's outside my knowledge base I'll answer from general knowledge."
+ ],
+ [
+  "Which planet is closest to the Sun?",
+  "Mercury is the closest planet to the Sun."
+ ],
+ [
+  "How many planets are in the solar system?",
+  "There are eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune."
+ ],
+ [
+  "What is the Sun?",
+  "The Sun is a star at the center of our solar system, a giant ball of hot plasma powered by nuclear fusion that turns hydrogen into helium."
+ ],
+ [
+  "What is a black hole?",
+  "A black hole is a region of space where gravity is so strong that nothing, not even light, can escape once it crosses the event horizon."
+ ],
+ [
+  "What is the Milky Way?",
+  "The Milky Way is the galaxy that contains our solar system. It is a barred spiral galaxy with hundreds of billions of stars."
+ ],
+ [
+  "How far is the Moon from Earth?",
+  "The Moon is about 384,400 kilometers (239,000 miles) from Earth on average."
+ ],
+ [
+  "Which planet has rings?",
+  "Saturn is famous for its bright rings, but Jupiter, Uranus and Neptune also have fainter ring systems."
+ ],
+ [
+  "What is the speed of sound?",
+  "The speed of sound in air at about 20 °C is roughly 343 meters per second."
+ ],
+ [
+  "What does Newton's first law say?",
+  "Newton's first law says an object at rest stays at rest, and an object in motion keeps moving at constant velocity, unless a net force acts on it."
+ ],
+ [
+  "What is the Earth's atmosphere made of?",
+  "The atmosphere is about 78% nitrogen and 21% oxygen, with small amounts of argon, carbon dioxide and other gases."
+ ],
+ [
+  "What is the powerhouse of the cell?",
+  "The mitochondria are called the powerhouse of the cell because they produce most of its ATP, the cell's energy currency."
+ ],
+ [
+  "What is the hardest natural substance?",
+  "Diamond is the hardest naturally occurring substance."
+ ],
+ [
+  "What is the chemical symbol for gold?",
+  "The chemical symbol for gold is Au, from the Latin word aurum."
+ ],
+ [
+  "What is the periodic table?",
+  "The periodic table arranges all known chemical elements by atomic number and groups them by similar properties."
+ ],
+ [
+  "What is an atom?",
+  "An atom is the smallest unit of an element, made of a nucleus of protons and neutrons surrounded by electrons."
+ ],
+ [
+  "What causes the seasons?",
+  "Seasons are caused by the tilt of Earth's axis, about 23.5 degrees, which changes how directly sunlight hits each hemisphere during the year."
+ ],
+ [
+  "What is the freezing point of water?",
+  "Water freezes at 0 °C (32 °F) at standard atmospheric pressure."
+ ],
+ [
+  "What is evolution?",
+  "Evolution is the change in the inherited traits of populations over generations, driven by processes such as natural selection, mutation and genetic drift."
+ ],
+ [
+  "Who proposed the theory of evolution by natural selection?",
+  "Charles Darwin, who published On the Origin of Species in 1859. Alfred Russel Wallace independently developed a similar idea."
+ ],
+ [
+  "What is a vaccine?",
+  "A vaccine trains the immune system to recognize a specific pathogen, so the body can respond quickly if it meets the real germ."
+ ],
+ [
+  "What is the difference between a virus and a bacterium?",
+  "Bacteria are single-celled living organisms, and many are harmless or helpful. Viruses are much smaller, need a host cell to reproduce, and are not treated with antibiotics."
+ ],
+ [
+  "How many bones does an adult human have?",
+  "An adult human has 206 bones."
+ ],
+ [
+  "How many chromosomes do humans have?",
+  "Humans normally have 46 chromosomes, arranged in 23 pairs."
+ ],
+ [
+  "What does the human heart do?",
+  "The heart pumps blood through the body, delivering oxygen and nutrients to tissues and carrying away waste."
+ ],
+ [
+  "What is climate change?",
+  "Climate change is the long-term shift in global temperatures and weather patterns. Since the 1800s it has been driven mainly by human activities, especially burning fossil fuels."
+ ],
+ [
+  "What is the capital of Italy?",
+  "The capital of Italy is Rome."
+ ],
+ [
+  "What is the capital of France?",
+  "The capital of France is Paris."
+ ],
+ [
+  "What is the capital of Pakistan?",
+  "The capital of Pakistan is Islamabad."
+ ],
+ [
+  "What is the largest ocean?",
+  "The Pacific Ocean is the largest and deepest ocean on Earth."
+ ],
+ [
+  "What is the longest river in the world?",
+  "The Nile is traditionally cited as the longest river at about 6,650 km, though some measurements give that title to the Amazon."
+ ],
+ [
+  "What is the tallest mountain in the world?",
+  "Mount Everest is the highest mountain above sea level, at about 8,849 meters."
+ ],
+ [
+  "What is the largest country by area?",
+  "Russia is the largest country in the world by area."
+ ],
+ [
+  "What is the most populous country?",
+  "India is the most populous country, having overtaken China in 2023."
+ ],
+ [
+  "When did World War II end?",
+  "World War II ended in 1945: in Europe in May and in the Pacific in September."
+ ],
+ [
+  "When was World War I?",
+  "World War I lasted from 1914 to 1918."
+ ],
+ [
+  "Who was the first president of the United States?",
+  "George Washington was the first president of the United States, serving from 1789 to 1797."
+ ],
+ [
+  "When did the Berlin Wall fall?",
+  "The Berlin Wall fell on 9 November 1989."
+ ],
+ [
+  "Who built the pyramids of Giza?",
+  "The pyramids of Giza were built by ancient Egyptians during the Old Kingdom, around 2600 to 2500 BCE."
+ ],
+ [
+  "Who invented the telephone?",
+  "Alexander Graham Bell was granted the first US patent for the telephone in 1876."
+ ],
+ [
+  "Who invented the World Wide Web?",
+  "Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN."
+ ],
+ [
+  "Who painted the Mona Lisa?",
+  "The Mona Lisa was painted by Leonardo da Vinci in the early 1500s."
+ ],
+ [
+  "What is pi?",
+  "Pi (π) is the ratio of a circle's circumference to its diameter, approximately 3.14159. It is an irrational number."
+ ],
+ [
+  "What is the Pythagorean theorem?",
+  "In a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides: a² + b² = c²."
+ ],
+ [
+  "What is a prime number?",
+  "A prime number is a natural number greater than 1 whose only divisors are 1 and itself, such as 2, 3, 5 and 7."
+ ],
+ [
+  "What is an algorithm?",
+  "An algorithm is a finite, step-by-step set of instructions for solving a problem or performing a task."
+ ],
+ [
+  "What is the internet?",
+  "The internet is a global network of interconnected networks that lets computers exchange data using standard protocols such as TCP/IP."
+ ],
+ [
+  "What is the difference between the internet and the World Wide Web?",
+  "The internet is the global network infrastructure. The World Wide Web is a service that runs on it, made of web pages linked together and accessed through browsers using HTTP."
+ ],
+ [
+  "What is DNS?",
+  "DNS, the Domain Name System, translates human-friendly domain names like example.com into the IP addresses computers use."
+ ],
+ [
+  "What is a URL?",
+  "A URL (Uniform Resource Locator) is the address of a resource on the internet, such as a web page, including the protocol and domain name."
+ ],
+ [
+  "What is HTML?",
+  "HTML (HyperText Markup Language) defines the structure and content of web pages. CSS styles them and JavaScript adds behavior."
+ ],
+ [
+  "What is JavaScript?",
+  "JavaScript is a programming language that runs in web browsers and on servers (via Node.js), used to make web pages interactive."
+ ],
+ [
+  "What is JSON?",
+  "JSON (JavaScript Object Notation) is a lightweight text format for storing and exchanging structured data as key-value pairs and lists."
+ ],
+ [
+  "What is a REST API?",
+  "A REST API is a web API that follows REST principles, using standard HTTP methods like GET, POST, PUT and DELETE on resources identified by URLs."
+ ],
+ [
+  "What is Git?",
+  "Git is a distributed version control system that tracks changes to files and lets many people collaborate on the same codebase."
+ ],
+ [
+  "What is GitHub?",
+  "GitHub is a website that hosts Git repositories and adds tools for collaboration such as pull requests, issues and automation."
+ ],
+ [
+  "What is Linux?",
+  "Linux is a free, open-source operating system kernel created by Linus Torvalds in 1991. It powers servers, Android phones and many other devices."
+ ],
+ [
+  "What is a programming language?",
+  "A programming language is a formal language used to write instructions that a computer can execute."
+ ],
+ [
+  "What is NoSQL?",
+  "NoSQL databases store data in non-relational models such as documents, key-value pairs, graphs or columns, and are often used for flexible schemas and large scale."
+ ],
+ [
+  "What is Kubernetes?",
+  "Kubernetes is an open-source system for automating the deployment, scaling and management of containerized applications."
+ ],
+ [
+  "What is DevOps?",
+  "DevOps is a set of practices that combines software development and IT operations to deliver software faster and more reliably, often using automation and CI/CD."
+ ],
+ [
+  "What is serverless computing?",
+  "Serverless computing lets you run code without managing servers. The cloud provider allocates resources on demand and you pay only for usage."
+ ],
+ [
+  "What is a CDN?",
+  "A CDN (Content Delivery Network) is a network of servers around the world that caches content closer to users to make websites load faster."
+ ],
+ [
+  "What is a GPU?",
+  "A GPU (Graphics Processing Unit) is a processor designed for many parallel calculations, used for graphics and widely for training AI models."
+ ],
+ [
+  "What is an SSD?",
+  "An SSD (Solid-State Drive) stores data on flash memory with no moving parts, making it much faster and more durable than a traditional hard disk."
+ ],
+ [
+  "What is Bluetooth?",
+  "Bluetooth is a short-range wireless technology for connecting devices such as headphones, keyboards and phones."
+ ],
+ [
+  "What is 5G?",
+  "5G is the fifth generation of cellular networks, offering higher speeds, lower latency and more connected devices than 4G."
+ ],
+ [
+  "What is the Internet of Things?",
+  "The Internet of Things (IoT) is the network of physical devices, such as sensors, appliances and wearables, that connect to the internet and exchange data."
+ ],
+ [
+  "What is quantum computing?",
+  "Quantum computing uses qubits, which can exist in superpositions of states, to solve certain problems much faster than classical computers."
+ ],
+ [
+  "What is cybersecurity?",
+  "Cybersecurity is the practice of protecting computers, networks, applications and data from unauthorized access, attacks and damage."
+ ],
+ [
+  "What is two-factor authentication?",
+  "Two-factor authentication (2FA) requires two proofs of identity, such as a password plus a code from an app, making accounts much harder to break into."
+ ],
+ [
+  "What is malware?",
+  "Malware is malicious software designed to harm or exploit a device or network, including viruses, worms, spyware and ransomware."
+ ],
+ [
+  "What is ransomware?",
+  "Ransomware is malware that encrypts a victim's files and demands payment for the key to restore them."
+ ],
+ [
+  "What is a DDoS attack?",
+  "A DDoS (Distributed Denial of Service) attack floods a server or network with traffic from many sources to make it unavailable to real users."
+ ],
+ [
+  "What is a neural network?",
+  "A neural network is a machine learning model made of layers of connected nodes, loosely inspired by the brain, that learns patterns from data."
+ ],
+ [
+  "What is deep learning?",
+  "Deep learning is a type of machine learning that uses neural networks with many layers to learn complex patterns from large amounts of data."
+ ],
+ [
+  "What is a large language model?",
+  "A large language model (LLM) is an AI model trained on vast amounts of text to understand and generate human language."
+ ],
+ [
+  "What is natural language processing?",
+  "Natural language processing (NLP) is the field of AI focused on enabling computers to understand, interpret and generate human language."
+ ],
+ [
+  "What is an embedding?",
+  "An embedding is a list of numbers that represents the meaning of text, images or other data, so that similar items end up close together in vector space."
+ ],
+ [
+  "What is a vector database?",
+  "A vector database stores embeddings and quickly finds the ones most similar to a query, which is how many RAG systems retrieve relevant information."
+ ],
+ [
+  "What is Bitcoin?",
+  "Bitcoin is the first cryptocurrency, launched in 2009 by the pseudonymous Satoshi Nakamoto. It runs on a blockchain without a central authority."
+ ],
+ [
+  "How are you?",
+  "I'm doing great, thanks for asking! How can I help you today?"
+ ],
+ [
+  "Hello",
+  "Hello! I'm Liffy. Ask me anything about science, tech or general knowledge."
+ ],
+ [
+  "Hi",
+  "Hi there! What would you like to know?"
+ ],
+ [
+  "Thank you",
+  "You're welcome! Ask me anything else you like."
+ ],
+ [
+  "Goodbye",
+  "Goodbye! Come back any time."
  ]
 ]
