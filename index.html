@@ -42,9 +42,55 @@ input{flex:1;min-width:0;border:1px solid var(--line);background:var(--bg);color
 input:focus{outline:2px solid var(--acc);border-color:transparent}
 .send{border:0;border-radius:12px;background:var(--acc);color:#fff;padding:0 16px;font-size:15px;cursor:pointer}
 .send:disabled{opacity:.5}
+
+/* ===== cartoon scene + mobile ===== */
+:root{--sky1:#7fd0ff;--sky2:#e9f8ff;--hill1:#86e08f;--hill2:#4fc57c;--cloud:#fff;--sun:#ffd84d}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--sky1:#15163f;--sky2:#3d3280;--hill1:#33468a;--hill2:#243166;--cloud:#5a5fa8;--sun:#f4efc4}}
+:root[data-theme="dark"]{--sky1:#15163f;--sky2:#3d3280;--hill1:#33468a;--hill2:#243166;--cloud:#5a5fa8;--sun:#f4efc4}
+html,body{height:100%}
+body{background:linear-gradient(var(--sky1),var(--sky2)) fixed;overscroll-behavior:none;-webkit-text-size-adjust:100%}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.scene{position:fixed;inset:0;overflow:hidden;z-index:0;pointer-events:none}
+.sun{position:absolute;top:9%;right:10%;width:clamp(56px,11vw,100px);aspect-ratio:1;border-radius:50%;background:var(--sun);box-shadow:0 0 0 12px rgba(255,255,255,.18),0 0 60px rgba(255,216,77,.55);animation:pulse 5s ease-in-out infinite}
+.cloud{position:absolute;left:-220px;width:130px;height:40px;background:var(--cloud);border-radius:40px;opacity:.95;animation:drift linear infinite}
+.cloud::before,.cloud::after{content:"";position:absolute;background:inherit;border-radius:50%}
+.cloud::before{width:56px;height:56px;left:18px;top:-26px}
+.cloud::after{width:42px;height:42px;left:62px;top:-18px}
+.c1{top:14%;animation-duration:48s}
+.c2{top:30%;transform:scale(.7);animation-duration:70s;animation-delay:-30s}
+.c3{top:46%;transform:scale(1.2);animation-duration:90s;animation-delay:-55s;opacity:.8}
+.hills{position:absolute;left:-5%;bottom:0;width:110%;height:30vh;animation:sway 14s ease-in-out infinite alternate}
+.h1{fill:var(--hill1)}.h2{fill:var(--hill2)}
+.bub{position:absolute;bottom:-40px;border-radius:50%;background:rgba(255,255,255,.4);border:2px solid rgba(255,255,255,.6);animation:rise linear infinite}
+.hero{position:relative;z-index:1}
+.bot{width:clamp(112px,34vw,150px);height:clamp(112px,34vw,150px);border:4px solid #fff;box-shadow:0 10px 0 rgba(0,0,0,.12),0 20px 50px rgba(91,91,240,.4)}
+.bot svg{width:58%;height:58%;animation:wiggle 6s ease-in-out infinite}
+.name{color:#fff;font-weight:700;text-shadow:0 2px 0 rgba(0,0,0,.2)}
+.panel{z-index:5}
+.msgs{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+input{font-size:16px}
+.send,.x{min-height:44px;min-width:44px}
+.chip{padding:9px 13px}
+@keyframes drift{to{translate:calc(100vw + 440px) 0}}
+@keyframes rise{to{transform:translateY(-110vh) translateX(var(--dx,20px));opacity:0}}
+@keyframes sway{to{transform:translateX(3%)}}
+@keyframes pulse{50%{transform:scale(1.08)}}
+@keyframes wiggle{0%,90%,100%{transform:rotate(0)}93%{transform:rotate(-10deg)}96%{transform:rotate(10deg)}}
+@media (max-width:600px){
+  .panel{left:0;right:0;top:0;bottom:0;width:100%;max-height:none;margin:0;border:0;border-radius:0;
+    padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+  :root{padding-top:0;padding-bottom:0}
+  .m{max-width:90%}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important}}
 </style>
 </head>
 <body>
+<div class="scene" aria-hidden="true">
+  <div class="sun"></div>
+  <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+  <svg class="hills" viewBox="0 0 1440 320" preserveAspectRatio="none"><path class="h1" d="M0 190C240 110 480 250 720 180S1200 240 1440 160V320H0Z"/><path class="h2" d="M0 250C300 200 520 300 800 240S1250 290 1440 230V320H0Z"/></svg>
+</div>
 <main class="hero">
   <button class="bot" id="open" aria-label="Chat with Liffy">
     <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -67,7 +113,7 @@ input:focus{outline:2px solid var(--acc);border-color:transparent}
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
 <script>
-const SITEKEY= "0x4AAAAAAFSCEO4BAgcWupJF"; 
+  const SITEKEY = "0x4AAAAAAFSCEO4BAgcWupJF";  
 let tsId=null,pending=null;
 function verifyHuman(){return new Promise((res,rej)=>{
   pending={res,rej};
@@ -107,6 +153,15 @@ async function ask(text){
   history.push({role:"user",content:text},{role:"assistant",content:d.answer});
  }catch(e){m.textContent="Sorry, I could not reach the server."}
  s.disabled=false;q.focus();}
+
+(function(){const sc=document.querySelector(".scene");
+ for(let i=0;i<14;i++){const b=document.createElement("span");b.className="bub";const s=8+Math.random()*26;
+  b.style.cssText=`left:${Math.random()*100}%;width:${s}px;height:${s}px;--dx:${(Math.random()*60-30).toFixed(0)}px;animation-duration:${10+Math.random()*14}s;animation-delay:${-Math.random()*20}s`;
+  sc.appendChild(b);}
+ if(window.visualViewport){const vv=visualViewport;
+  const fit=()=>{if(innerWidth<=600&&panel.classList.contains("open")){panel.style.height=vv.height+"px";panel.style.top=vv.offsetTop+"px";}else{panel.style.height="";panel.style.top="";}};
+  vv.addEventListener("resize",fit);vv.addEventListener("scroll",fit);$("open").addEventListener("click",()=>setTimeout(fit,50));}
+})();
 </script>
 </body>
 </html>
